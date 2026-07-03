@@ -1,0 +1,310 @@
+{
+  "disease": "Stroke",
+  "disease_key": "stroke",
+  "dataset_name": "Stroke Prediction Dataset (Kaggle, fedesoriano)",
+  "data_source": "offline_fallback",
+  "n_samples": 5110,
+  "n_features": 20,
+  "positive_rate": 0.052,
+  "feature_names": [
+    "age",
+    "hypertension",
+    "heart_disease",
+    "avg_glucose_level",
+    "bmi",
+    "gender_Female",
+    "gender_Male",
+    "ever_married_No",
+    "ever_married_Yes",
+    "work_type_Govt_job",
+    "work_type_Never_worked",
+    "work_type_Private",
+    "work_type_Self-employed",
+    "work_type_children",
+    "Residence_type_Rural",
+    "Residence_type_Urban",
+    "smoking_status_Unknown",
+    "smoking_status_formerly smoked",
+    "smoking_status_never smoked",
+    "smoking_status_smokes"
+  ],
+  "best_model": "logistic_regression",
+  "model_kind": "linear",
+  "explainability_method": "SHAP (KernelExplainer)",
+  "all_models_compared": {
+    "logistic_regression": {
+      "accuracy": 0.8503,
+      "f1": 0.3704,
+      "roc_auc": 0.9193
+    },
+    "random_forest": {
+      "accuracy": 0.8796,
+      "f1": 0.3881,
+      "roc_auc": 0.901
+    },
+    "gradient_boosting": {
+      "accuracy": 0.9481,
+      "f1": 0.209,
+      "roc_auc": 0.8974
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8503,
+    "precision": 0.2368,
+    "recall": 0.8491,
+    "f1": 0.3704,
+    "roc_auc": 0.9193,
+    "confusion_matrix": {
+      "tn": 824,
+      "fp": 145,
+      "fn": 8,
+      "tp": 45
+    },
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0189
+      },
+      {
+        "fpr": 0.001,
+        "tpr": 0.0566
+      },
+      {
+        "fpr": 0.0021,
+        "tpr": 0.0755
+      },
+      {
+        "fpr": 0.0031,
+        "tpr": 0.0943
+      },
+      {
+        "fpr": 0.0093,
+        "tpr": 0.1132
+      },
+      {
+        "fpr": 0.0114,
+        "tpr": 0.1321
+      },
+      {
+        "fpr": 0.0134,
+        "tpr": 0.1509
+      },
+      {
+        "fpr": 0.0155,
+        "tpr": 0.2075
+      },
+      {
+        "fpr": 0.0196,
+        "tpr": 0.2264
+      },
+      {
+        "fpr": 0.0217,
+        "tpr": 0.2453
+      },
+      {
+        "fpr": 0.0227,
+        "tpr": 0.3208
+      },
+      {
+        "fpr": 0.0248,
+        "tpr": 0.3585
+      },
+      {
+        "fpr": 0.0289,
+        "tpr": 0.4151
+      },
+      {
+        "fpr": 0.0351,
+        "tpr": 0.434
+      },
+      {
+        "fpr": 0.0361,
+        "tpr": 0.4717
+      },
+      {
+        "fpr": 0.0372,
+        "tpr": 0.4906
+      },
+      {
+        "fpr": 0.0413,
+        "tpr": 0.5094
+      },
+      {
+        "fpr": 0.0444,
+        "tpr": 0.5472
+      },
+      {
+        "fpr": 0.0537,
+        "tpr": 0.5849
+      },
+      {
+        "fpr": 0.0578,
+        "tpr": 0.6226
+      },
+      {
+        "fpr": 0.063,
+        "tpr": 0.6415
+      },
+      {
+        "fpr": 0.0764,
+        "tpr": 0.6604
+      },
+      {
+        "fpr": 0.0774,
+        "tpr": 0.6792
+      },
+      {
+        "fpr": 0.0795,
+        "tpr": 0.6981
+      },
+      {
+        "fpr": 0.0867,
+        "tpr": 0.717
+      },
+      {
+        "fpr": 0.0898,
+        "tpr": 0.7358
+      },
+      {
+        "fpr": 0.1176,
+        "tpr": 0.7547
+      },
+      {
+        "fpr": 0.1424,
+        "tpr": 0.7736
+      },
+      {
+        "fpr": 0.1445,
+        "tpr": 0.7925
+      },
+      {
+        "fpr": 0.1496,
+        "tpr": 0.8113
+      },
+      {
+        "fpr": 0.1713,
+        "tpr": 0.8491
+      },
+      {
+        "fpr": 0.1858,
+        "tpr": 0.8679
+      },
+      {
+        "fpr": 0.2157,
+        "tpr": 0.8868
+      },
+      {
+        "fpr": 0.2611,
+        "tpr": 0.9057
+      },
+      {
+        "fpr": 0.2714,
+        "tpr": 0.9245
+      },
+      {
+        "fpr": 0.29,
+        "tpr": 0.9434
+      },
+      {
+        "fpr": 0.4076,
+        "tpr": 0.9623
+      },
+      {
+        "fpr": 0.4799,
+        "tpr": 0.9811
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ]
+  },
+  "global_feature_importance": [
+    {
+      "feature": "age",
+      "importance": 0.2079
+    },
+    {
+      "feature": "avg_glucose_level",
+      "importance": 0.0973
+    },
+    {
+      "feature": "hypertension",
+      "importance": 0.0536
+    },
+    {
+      "feature": "bmi",
+      "importance": 0.0348
+    },
+    {
+      "feature": "heart_disease",
+      "importance": 0.0108
+    },
+    {
+      "feature": "smoking_status_never smoked",
+      "importance": 0.0065
+    },
+    {
+      "feature": "work_type_Self-employed",
+      "importance": 0.0055
+    },
+    {
+      "feature": "work_type_Govt_job",
+      "importance": 0.0045
+    },
+    {
+      "feature": "work_type_Private",
+      "importance": 0.0043
+    },
+    {
+      "feature": "smoking_status_formerly smoked",
+      "importance": 0.0039
+    },
+    {
+      "feature": "smoking_status_smokes",
+      "importance": 0.0035
+    },
+    {
+      "feature": "ever_married_No",
+      "importance": 0.0032
+    },
+    {
+      "feature": "ever_married_Yes",
+      "importance": 0.0032
+    },
+    {
+      "feature": "work_type_children",
+      "importance": 0.0022
+    },
+    {
+      "feature": "gender_Female",
+      "importance": 0.0012
+    },
+    {
+      "feature": "gender_Male",
+      "importance": 0.0012
+    },
+    {
+      "feature": "Residence_type_Urban",
+      "importance": 0.0006
+    },
+    {
+      "feature": "Residence_type_Rural",
+      "importance": 0.0006
+    },
+    {
+      "feature": "smoking_status_Unknown",
+      "importance": 0.0002
+    },
+    {
+      "feature": "work_type_Never_worked",
+      "importance": 0.0
+    }
+  ],
+  "trained_at": "2026-07-01T04:23:24Z",
+  "training_time_ms": 4055
+}

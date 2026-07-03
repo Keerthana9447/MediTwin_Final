@@ -1,0 +1,187 @@
+{
+  "disease": "Heart Disease",
+  "disease_key": "heart",
+  "dataset_name": "UCI Heart Disease (Cleveland)",
+  "data_source": "offline_fallback",
+  "n_samples": 303,
+  "n_features": 13,
+  "positive_rate": 0.482,
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "best_model": "logistic_regression",
+  "model_kind": "linear",
+  "explainability_method": "SHAP (KernelExplainer)",
+  "all_models_compared": {
+    "logistic_regression": {
+      "accuracy": 0.8361,
+      "f1": 0.8333,
+      "roc_auc": 0.9149
+    },
+    "random_forest": {
+      "accuracy": 0.8689,
+      "f1": 0.8621,
+      "roc_auc": 0.9149
+    },
+    "gradient_boosting": {
+      "accuracy": 0.7541,
+      "f1": 0.7368,
+      "roc_auc": 0.8728
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8361,
+    "precision": 0.8065,
+    "recall": 0.8621,
+    "f1": 0.8333,
+    "roc_auc": 0.9149,
+    "confusion_matrix": {
+      "tn": 26,
+      "fp": 6,
+      "fn": 4,
+      "tp": 25
+    },
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0345
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.4483
+      },
+      {
+        "fpr": 0.0312,
+        "tpr": 0.4483
+      },
+      {
+        "fpr": 0.0312,
+        "tpr": 0.5517
+      },
+      {
+        "fpr": 0.0625,
+        "tpr": 0.5517
+      },
+      {
+        "fpr": 0.0625,
+        "tpr": 0.7586
+      },
+      {
+        "fpr": 0.0938,
+        "tpr": 0.7586
+      },
+      {
+        "fpr": 0.0938,
+        "tpr": 0.8276
+      },
+      {
+        "fpr": 0.125,
+        "tpr": 0.8276
+      },
+      {
+        "fpr": 0.125,
+        "tpr": 0.8621
+      },
+      {
+        "fpr": 0.3438,
+        "tpr": 0.8621
+      },
+      {
+        "fpr": 0.3438,
+        "tpr": 0.8966
+      },
+      {
+        "fpr": 0.375,
+        "tpr": 0.8966
+      },
+      {
+        "fpr": 0.375,
+        "tpr": 0.9655
+      },
+      {
+        "fpr": 0.5938,
+        "tpr": 0.9655
+      },
+      {
+        "fpr": 0.5938,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ]
+  },
+  "global_feature_importance": [
+    {
+      "feature": "exang",
+      "importance": 0.1628
+    },
+    {
+      "feature": "thalach",
+      "importance": 0.1447
+    },
+    {
+      "feature": "ca",
+      "importance": 0.093
+    },
+    {
+      "feature": "cp",
+      "importance": 0.0843
+    },
+    {
+      "feature": "sex",
+      "importance": 0.0818
+    },
+    {
+      "feature": "trestbps",
+      "importance": 0.068
+    },
+    {
+      "feature": "oldpeak",
+      "importance": 0.0568
+    },
+    {
+      "feature": "chol",
+      "importance": 0.0523
+    },
+    {
+      "feature": "age",
+      "importance": 0.0339
+    },
+    {
+      "feature": "fbs",
+      "importance": 0.016
+    },
+    {
+      "feature": "thal",
+      "importance": 0.0101
+    },
+    {
+      "feature": "restecg",
+      "importance": 0.0082
+    },
+    {
+      "feature": "slope",
+      "importance": 0.0022
+    }
+  ],
+  "trained_at": "2026-07-01T04:23:20Z",
+  "training_time_ms": 10360
+}
